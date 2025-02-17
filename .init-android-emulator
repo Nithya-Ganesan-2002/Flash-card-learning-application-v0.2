@@ -1,0 +1,5 @@
+{
+    "status": "error",
+    "message": "Failed to start Android emulator: AVD 'test_emulator' does not exist. Please create an Android Virtual Device first using Android Studio or the avdmanager tool.",
+    "emulator_ready": false
+}

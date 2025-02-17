@@ -1,0 +1,1 @@
+{"is_source_file": false, "format": "", "description": "", "external_files": [], "external_methods": [], "published": [], "classes": [], "methods": [], "calls": [], "search-terms": [], "state": 2, "filename": "/home/kavia/workspace/Flash-card-learning-application-v0.2/README.md", "hash": "4bf586a94d6fe60e5a8e325085be286f", "format-version": 3, "code-base-name": "default"}

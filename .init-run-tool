@@ -1,0 +1,6 @@
+{
+    "command": "./gradlew :app:installDebug",
+    "working_directory": "/home/kavia/workspace/Flash-card-learning-application-v0.2/FlashcardManagementComponent",
+    "status": "error",
+    "message": "Emulator device initialization required before proceeding with app installation"
+}
