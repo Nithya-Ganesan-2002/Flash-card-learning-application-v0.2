@@ -1,5 +1,26 @@
 {
   "task_description": "{'component_name': 'Flashcard Management Component', 'description': '### Core Technologies:\\n- **Technology Stack**: Java and Kotlin for Android development using Android Studio.\\n- **Database**: Firebase for backend services, offering real-time database capabilities.\\n- **Runtime Environment**: Android OS with support for Java/Kotlin.\\n- **Integration Technologies**: REST APIs for external communication, particularly for social media sharing.\\n- **UI Technologies**: Android native UI components for a seamless user experience.\\n\\n### Build and Development Tools:\\n- **Build System**: Gradle for build automation.\\n- **Development Tools**: Android Studio as the primary IDE.\\n- **Testing Frameworks**: JUnit for unit testing, Espresso for UI testing.\\n- **Deployment and CI/CD**: Firebase App Distribution for deployment, GitHub Actions for CI/CD pipelines.', 'interfaces': '', 'algorithms': '', 'pseudocode': '', 'local_backend_service': [], 'asset_images_b64': {}, 'available_assets': []}",
-  "tasks": {},
-  "next_task_id": 1
+  "tasks": {
+    "Task1": {
+      "description": "Run Android App in Emulator",
+      "task_description": "Deploy and run the Flash Card Learning Application in Android emulator",
+      "status": "to-do",
+      "details": "Deploy the basic Android application to the emulator and verify it runs correctly showing the Hello World message. Using API 34 emulator running in headless mode.",
+      "subtasks": {
+        "Task1SubTask1": {
+          "description": "Build and deploy app to emulator",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Build the Android app using Gradle and deploy it to the running emulator instance"
+        },
+        "Task1SubTask2": {
+          "description": "Verify app launch and UI",
+          "status": "to-do",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Verify that the app launches successfully and displays the Flash Card Learning Application text correctly"
+        }
+      }
+    }
+  },
+  "next_task_id": 2
 }
