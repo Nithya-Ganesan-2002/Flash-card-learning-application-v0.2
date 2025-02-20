@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flashcard.app.R
 import com.flashcard.app.databinding.FragmentFlashcardListBinding
@@ -34,8 +35,9 @@ class FlashcardListFragment : Fragment() {
 
     private fun setupRecyclerView() {
         flashcardAdapter = FlashcardAdapter { flashcard ->
-            // Handle flashcard click
-            // TODO: Navigate to flashcard detail/edit screen
+            findNavController().navigate(
+                FlashcardListFragmentDirections.actionFlashcardListToEdit(flashcard)
+            )
         }
         binding.flashcardRecyclerView.apply {
             adapter = flashcardAdapter
@@ -58,7 +60,9 @@ class FlashcardListFragment : Fragment() {
 
     private fun setupClickListeners() {
         binding.addFlashcardFab.setOnClickListener {
-            // TODO: Navigate to add flashcard screen
+            findNavController().navigate(
+                FlashcardListFragmentDirections.actionFlashcardListToEdit(null)
+            )
         }
     }
 
