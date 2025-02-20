@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/flashcardListFragment">
+
+    <fragment
+        android:id="@+id/flashcardListFragment"
+        android:name="com.flashcard.app.ui.flashcard.FlashcardListFragment"
+        android:label="Flashcards">
+        <action
+            android:id="@+id/action_list_to_edit"
+            app:destination="@id/flashcardEditFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flashcardEditFragment"
+        android:name="com.flashcard.app.ui.flashcard.FlashcardEditFragment"
+        android:label="Edit Flashcard">
+        <argument
+            android:name="flashcardId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+</navigation>
