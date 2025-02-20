@@ -20,7 +20,135 @@
           "details": "Verify that the app launches successfully and displays the Flash Card Learning Application text correctly"
         }
       }
+    },
+    "Task2": {
+      "description": "Setup MVVM Architecture and Project Structure",
+      "task_description": "Implement MVVM architecture pattern and setup project structure including dependency injection",
+      "status": "to-do",
+      "details": "Setup the foundational architecture for the Flashcard Management Component using MVVM pattern, Kotlin, and Android Architecture Components. Include dependency injection setup and required dependencies.",
+      "subtasks": {
+        "Task2SubTask1": {
+          "description": "Add architecture dependencies",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Add required dependencies in build.gradle for MVVM (ViewModel, LiveData), Room, Hilt for dependency injection, and Kotlin Coroutines"
+        },
+        "Task2SubTask2": {
+          "description": "Create base application structure",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create Application class, setup Hilt for DI, and implement base architecture components"
+        },
+        "Task2SubTask3": {
+          "description": "Implement data models",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create data models for Flashcard entities including Room annotations"
+        },
+        "Task2SubTask4": {
+          "description": "Setup Room database",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement Room database, DAOs, and type converters for local storage"
+        }
+      }
+    },
+    "Task3": {
+      "description": "Firebase Integration and Sync Implementation",
+      "task_description": "Implement Firebase integration for cloud storage and real-time synchronization",
+      "status": "to-do",
+      "details": "Implement Firebase Realtime Database integration for cloud storage and synchronization of flashcards. Include user authentication and real-time data sync capabilities.",
+      "subtasks": {
+        "Task3SubTask1": {
+          "description": "Implement Firebase Authentication",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Setup Firebase Authentication including user registration and login functionality"
+        },
+        "Task3SubTask2": {
+          "description": "Create Firebase data models",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement data models and converters for Firebase Realtime Database"
+        },
+        "Task3SubTask3": {
+          "description": "Implement data synchronization",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create sync mechanism between local Room database and Firebase Realtime Database"
+        },
+        "Task3SubTask4": {
+          "description": "Add offline support",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement offline persistence and conflict resolution for data synchronization"
+        }
+      }
+    },
+    "Task4": {
+      "description": "Flashcard UI Implementation",
+      "task_description": "Create UI components and implement user interface for flashcard management",
+      "status": "to-do",
+      "details": "Implement user interface components for flashcard management including creation, editing, viewing, and study features. Use Material Design components and follow Android UI best practices.",
+      "subtasks": {
+        "Task4SubTask1": {
+          "description": "Create flashcard list UI",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement RecyclerView-based list UI for displaying flashcard decks and cards"
+        },
+        "Task4SubTask2": {
+          "description": "Implement flashcard creation/editing UI",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Create UI components for adding and editing flashcards including text input and media attachment"
+        },
+        "Task4SubTask3": {
+          "description": "Add study mode interface",
+          "status": "to-do",
+          "micro_agent": "CodeWritingAgent",
+          "details": "Implement study mode with card flipping animation and progress tracking"
+        },
+        "Task4SubTask4": {
+          "description": "Implement visual validation",
+          "status": "to-do",
+          "micro_agent": "VisualVerificationAgent",
+          "details": "Verify UI components, animations, and user interactions"
+        }
+      }
+    },
+    "Task5": {
+      "description": "Testing Implementation",
+      "task_description": "Implement comprehensive testing suite for the application",
+      "status": "to-do",
+      "details": "Create comprehensive test suite including unit tests for business logic and UI tests for user interactions. Use JUnit for unit testing and Espresso for UI testing.",
+      "subtasks": {
+        "Task5SubTask1": {
+          "description": "Implement ViewModel tests",
+          "status": "to-do",
+          "micro_agent": "TestCodeWritingAgent",
+          "details": "Create unit tests for ViewModels using JUnit and coroutines testing"
+        },
+        "Task5SubTask2": {
+          "description": "Add Repository tests",
+          "status": "to-do",
+          "micro_agent": "TestCodeWritingAgent",
+          "details": "Implement unit tests for repositories including Firebase and Room database operations"
+        },
+        "Task5SubTask3": {
+          "description": "Create UI tests",
+          "status": "to-do",
+          "micro_agent": "TestCodeWritingAgent",
+          "details": "Implement Espresso tests for UI components and user interactions"
+        },
+        "Task5SubTask4": {
+          "description": "Run test suite",
+          "status": "to-do",
+          "micro_agent": "TestExecutionAgent",
+          "details": "Execute complete test suite and verify all tests pass"
+        }
+      }
     }
   },
-  "next_task_id": 2
+  "next_task_id": 6
 }
